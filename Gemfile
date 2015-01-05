@@ -41,3 +41,7 @@ gem 'spring',        group: :development
 gem 'bootstrap-sass', '~> 3.3.1'
 
 gem 'rspotify'
+
+group :production do
+  gem 'rails_12factor'
+end
