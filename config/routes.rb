@@ -11,7 +11,9 @@ Rails.application.routes.draw do
   root 'home#index'
 
   get '/artists', to: 'artists#index'
-  get '/artists/:id', to:'artists#show', as: 'artist'
+  get '/artists/:id', to: 'artists#show', as: 'artist'
+  get '/auth/spotify/callback', to: 'users#spotify'
+  get 'users/show', to: 'users#show', as: 'playlist'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
